@@ -8,25 +8,26 @@
   </head>
   <body>
     <main>
-      <div class"title-container">
-      <h1 id="title">Title of the survey form</h1>
-      <p id="description">Description of the survey form</p>
+      <div class="title-container">
+        <h1 id="title">Title of the survey form</h1>
+        <p id="description">Description of the survey form</p>
+      </div>
       <form id="survey-form">
         <div class="form-group">
           <label id="name-label">Name</label>
-          <input id="name" placeholder="Enter your name" required=""/>
+          <input id="name" class="form-control" placeholder="Enter your name" required=""/>
         </div>
         <div class="form-group">
           <label id="email-label">Email</label>
-          <input id="email" type="email" placeholder="Enter your email" required=""/>
+          <input id="email" class="form-control" type="email" placeholder="Enter your email" required=""/>
         </div>
         <div class="form-group">
           <label id="number-label">Age</label>
-          <input id="number" type="number" min="15" max="50" placeholder="Enter your age"/>
+          <input id="number" class="form-control" type="number" min="15" max="50" placeholder="Enter your age"/>
         </div>
         <div class="form-group">
           <label>Which option best describes your current role?</label>
-          <select id="dropdown">
+          <select id="dropdown" class="form-control">
             <option disabled="" selected="">Select an option</option>
             <option value="Option1">Option 1</option>
             <option value="Option2">Option 2</option>
@@ -36,21 +37,35 @@
         </div>
         <div class="form-group">
           <label id="label-recommend">Would you recommend freeCodeCamp to a friend?</label>
-          <input type="radio" name="recommend" value="S">Yes</input>
-          <input type="radio" name="recommend" value="N">No</input>
-          <input type="radio" name="recommend" value="SN">Maybe</input>
+          <label>
+            <input type="radio" class="input-radio" name="recommend" value="S">Yes</input>
+          </label>
+          <label>
+            <input type="radio" class="input-radio" name="recommend" value="N">No</input>
+          </label>
+          <label>
+            <input type="radio" class="input-radio" name="recommend" value="SN">Maybe</input>
+          </label>
         </div>
         <div class="form-group">
           <label id="label-improved">What would you like to see improved? (Check all that apply)</label>
-          <input type="checkbox" name="improved" value="S">Yes</input>
-          <input type="checkbox" name="improved" value="N">No</input>
-          <input type="checkbox" name="improved" value="SN">Maybe</input>
+          <label>
+            <input type="checkbox" class="input-check" name="improved" value="S">Yes</input>
+          </label>
+          <label>
+            <input type="checkbox" class="input-check" name="improved" value="N">No</input>
+          </label>
+          <label>
+            <input type="checkbox" class="input-check" name="improved" value="SN">Maybe</input>
+          </label>
         </div>
         <div class="form-group">
           <label id="label-additional-comments">Any comments or suggestions?</label>
-          <textarea id="additional-comments" rows="8" cols="80" placeholder="Enter your comments here..."></textarea>
+          <textarea id="additional-comments" class="input-textarea" placeholder="Enter your comments here..."></textarea>
         </div>
-        <button id="submit" type="submit">Submit</button>
+        <div class="form-group">
+          <button id="submit" type="submit">Submit</button>
+        </div>
       </form>
     </main>
   </body>
